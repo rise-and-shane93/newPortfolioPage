@@ -1,0 +1,59 @@
+{
+    "nav": {
+        "home": "Inicio",
+        "about": "Sobre Mi",
+        "projects": "Proyectos",
+        "contact": "Contacto",
+        "button": "¡Haz clic aquí para cambiar el idioma!"
+    },
+    "home": {
+        "jumbo": {
+            "h1": "¡Bienvenidos a todos!",
+            "h3": "Me llamo Shane Harper y yo soy un desarrollador web de Baltimore, MD, EEUU.",
+            "h4": "Haz clic aquí para aprender más"
+        },
+        "intro": {
+            "title": "Quien soy yo",
+            "briefDesc": "Yo soy un desarrollador web autodicto y apasionado quien siempre está aprendiendo. Además, siempre estoy buscando oportunidades en las cuales podré utilizar mis aptitudes para hacer un impacto bien positivo en este mundo. Nunca dejaré de expandir mi conocimiento, no solamente para mantanerme pegado a las tendencias actuales, sino tambien de que como puedo hacer una diferencia. ¡No dude en mandarme un mensaje si usted tiene preguntas o consultas!"
+        },
+        "featProj": {
+            "title": "Proyecto Destacado",
+            "desc": "Un amigo mío de mi universidad y jugador de baloncesto profesional Jestin Lewis quiso un sitio web para hacer un anuncio de su campamento de baloncesto y para vender su mercancía. ¡Haz clic el botón por abajo para ver el proyecto!",
+            "viewSite": "Ver sitio web",
+            "viewStudy": "Ver investigación"
+        }
+    },
+    "about": {
+        "bio": {
+            "h1": "Sobre Mi",
+            "p1": "¡Gracias por visitar mi sitio web de portafolio!",
+            "p2": "Yo comencé aprendiendo desarrollo web en el verano de 2017, cuando yo estaba conversando con mi primo sobre carreras posibles. Él me sugirió que yo investigara desarrollo web y software, que está trabajando como un desarrollador web a tiempo completo. Además, no fue necesario haber obtenido una licenciatura en Informática. En lugar de ello, yo pude utilizar mi tiempo libre para aprender y demonstrar mis aptitudes para que yo pudiera obtener un trabajo. Tras mucho pensamiento y investigación, yo decidí perseguir ser una desarrollador web.",
+            "p3": "Después de hacer algunas lecciones en Free Code Camp y TreeHouse, yo empecé creando mis propio proyectos y asitiendo a reuniones locales para aprender de desarrolladores avanzados. Mientras tanto, enfrenté muchos obstaculos de aprendizaje. Sin embargo, mis nuevos amigos me animaron a seguir adelante. Con cada linea de código que escribí, yo gané más confianza en mi trabajo y conocimento de desarrollo web, creando un par de sitios web basicos. Justamente después, ¡mis amigos me contaron que era hora de postularme por trabajos!",
+            "p4": "Por fin, después de postularme por 70 trabajos, ¡obtuve un trabajo como desarrollador web a tiempo completo en Baltimore! Yo estoy muy agradecido por todo el trabajo duro y las ganas que recibí de mis amigos. La mejor parte es que me he dado cuenta que aprendré por el resto de mi vida, aprendiendo nuevas technologias y utilizandolas en mis nuevos proyectos. Yo también quiero inspirar a otros para que puedan lograr sus metas de convertirse en un desarrollador web porque yo debo mucho de mi éxito a la ayuda que había recibido de mis amigos y mentores."    
+        },
+        "skills": {
+            "h2": "Mi Conocimiento"
+        },
+        "community": {
+            "h2": "Voluntario por mi Comunidad",
+            "p1": "Yo soy un líder comunitaria en ",
+            "p2": ", una organización sin ánimo de lucro fundado por mi primo con la meta de hacer posible una carrera de technología por sus miembros. ",
+            "p3": "Nosotros organizamos meetups de clases de technología y también tenemos una red extensiva de mentores. Nuestros mentores están comprometidos en ayudar a nuevos desarrolladores web en aprender informática y encontrar un trabajo excelente en la industria de tech. ",
+            "p4": "Todos de nuestros meetups y eventos están ubicados por el sureste de los EEUU. Sin embargo, gracias al crecimiento de nuestra oganización, ¡deseamos expandir nuestra influencia por todo el país para que podamos ayudar a más personas a lograr sus metas!"
+        }
+    },
+    "projects": {
+        "intro": {
+            "h1": "Mis proyectos"
+        },
+        "card": {
+            "caption": ["hola", "a", "todos"]
+        }
+    },
+    "footer": {
+        "copy": "Todos derechos reservados. Este sitio web ha sido diseñado y desarrolado por Shane Harper.",
+        "social": "¡Sígame en las redes sociales!",
+        "about": "Sobre este sitio web",
+        "siteInfo": "Shane Harper es un desarrador web frontend autodicto de Baltimore, MD, EEUU. Él ha dedicado este sitio web para mostrar sus proyectos actuales y aptitudes junto con inspirar a otros para lograr lanzar su carrera de technología."
+    }
+}

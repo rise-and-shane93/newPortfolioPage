@@ -1,0 +1,35 @@
+.nav-toggler--open {
+    display: none;
+}
+
+.langMenu, .nav-toggler {
+    float: right;
+    height: 66px;
+    margin-right: 20px;
+    padding: 0 15px;
+}
+
+.langMenu {
+    background-color: $darkTeal;
+    a {
+        padding: 5px;
+        border-radius: 25px;
+        transition: .3s ease;
+        &:hover {
+            transition: .3s ease;
+            background-color: $lightTeal;
+            cursor: pointer;
+        }
+    }
+}
+
+.nav-toggler {
+    background-color: $darkTeal;
+    border: none;
+    // color: 
+    transition: .3s ease;
+    &:hover {
+        background-color: $lightTeal;
+        transition: .3s ease;
+    }
+}

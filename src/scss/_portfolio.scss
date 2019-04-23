@@ -1,0 +1,178 @@
+/*-----Font styles-----*/
+h1, .text-center {
+    text-align: center;
+}
+.text-justify,
+.text-justify p {
+    text-align: justify;
+}
+/*-----/Font styles-----*/
+/*-----Misc styles-----*/
+.hideBrOnMobile {
+    display: none;
+    @include mq('md') {
+        display: block;
+    }
+}
+.hideBrOnDesk {
+    display: block;
+    @include mq('md') {
+        display: none;
+    }
+}
+.gradientOverlay {
+    width: 100%;
+    height: 100%;
+    background-color: rgba($midnight, 0.7);
+    p {
+        opacity: 0;
+    }
+}
+.button {
+    &-style1, &-style2 {
+        text-align: center;
+        padding: 5px;
+        border-radius: 10px;
+        transition: .3s ease;
+        &:hover {
+            cursor: pointer;
+            transition: .3s ease;
+        }
+    }
+    &-style1 {
+        border: 2px solid $lightTeal;
+        color: $lightTeal;
+        transition: .3s ease-in-out;
+        &:hover {
+            background-color: #fff;
+            border: 2px solid #fff;
+            color: $darkTeal;
+        }
+    }
+    &-style2 {
+        border: 2px solid $lightTeal;
+        color: #fff;
+        background-color: $lightTeal;
+        &:hover {
+            background-color: #fff;
+            color: $lightTeal;
+            border: 2px solid $lightTeal;
+        }
+    }
+}
+/*-----/Misc styles-----*/
+/*-----Jumbotron-----*/
+.jumbotron {
+    position: relative;
+    background: linear-gradient(rgba($midnight, 0.5), rgba($midnight, 0.5)),
+    url("../images/coverPhotoLarge.png") center center / cover no-repeat;
+    min-height: 200px;
+    border-radius: 0 !important;
+    margin: 0 -20px;
+    @include mq('sm') {
+        min-height: 300px;
+    }
+    @include mq('md') {
+        min-height: 400px;
+    }
+    @include mq('lg') {
+        min-height: calc(100vh - 66px);
+    }
+    // @include mq('xl') {
+    //     min-height: 600px;
+    // }
+    .jumbo-text {
+        @include posAbsCenter();
+        text-align: center;
+        color: $lightTeal;
+        //width: 100%;
+        h1 {
+            font-size: 1.5rem;
+            //margin-top: -1rem;
+            margin-bottom: 4rem;
+            @include mq('sm') {
+                font-size: 2rem;
+                margin-top: -3rem;
+                margin-bottom: 6rem;
+            }
+            @include mq('md') {
+                font-size: 2rem;
+                margin-top: -1rem;
+                margin-bottom: 6rem;
+            }
+            @include mq('lg') {
+                font-size: 3rem;
+                margin-top: -3rem;
+                margin-bottom: 10rem;
+            }
+        }
+        h3 {
+            font-size: 0.8rem;
+            @include mq('sm') {
+                // font-size: 1.5rem;
+            }
+            @include mq('md') {
+                font-size: 1.25rem;
+            }
+            @include mq('lg') {
+                font-size: 1.75rem;
+            }
+        }
+    }
+    img {
+        @include blockCenter();
+    }
+    .smooth-scroll {
+        display: none;
+        @include mq('lg') {
+            display: block;
+            position: absolute;
+            bottom: 50px;
+            left: 50%;
+            transform: translateX(-50%);  
+        }
+    }
+}
+/*-----/Jumbotron-----*/
+/*-----Home-main-----*/
+article {
+    @include blockCenter;
+    //max-width: 95%;
+    @include mq('sm') {
+        max-width: 85%;
+    }
+    @include mq('md') {
+        max-width: 65%;
+    }
+    @include mq('lg') {
+        max-width: 1000px;
+    }
+    h2{
+        text-align: center;
+    }
+}
+.case-study {
+    &-buttons {
+        height: 100%;
+        @include flexBox(row, center, center);
+        font-size: 1.5rem;
+        a {
+            margin: 1rem;
+        }
+    }
+    img {
+        @include blockCenter;
+        max-width: 90%;
+        @include mq('md') {
+            max-width: 55%;
+        }
+    }
+}
+.style14 { 
+    //display: block;
+    border: 0; 
+    height: 1px;
+    background: linear-gradient(to left,#f0f0f0, #8c8b8b, #f0f0f0);
+    max-width: 1000px;
+}
+/*-----/Home-main-----*/

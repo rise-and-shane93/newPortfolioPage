@@ -1,0 +1,59 @@
+{
+    "nav": {
+        "home": "Home",
+        "about": "About",
+        "projects": "Projects",
+        "contact": "Contact",
+        "button": "Click here to change the language!"
+    },
+    "home": {
+        "jumbo": {
+            "h1": "Hello everyone!",
+            "h3": "My name is Shane Harper and I am a web developer from Baltimore, MD.",
+            "h4": "Click here to learn more"
+        },
+        "intro": {
+            "title": "Who I am",
+            "briefDesc": "I am a passionate self-taught web developer and lifelong learner looking to use my skill set to make a positive impact in this world. I am always looking to broaden my knowledge not just to keep up with market trends, but to learn how I can make a difference today. Feel free to shoot me a message if you have any questions or inquiries!"
+        },
+        "featProj": {
+            "title": "Featured Project",
+            "desc": "My friend from college and professional basketball player Jestin Lewis wanted a website to advertise his summer camp and to sell his merchandise. Click the button below to view the case study!",
+            "viewSite": "View site",
+            "viewStudy": "View case study"
+        }
+    },
+    "about": {
+        "bio": {
+            "h1": "About Me",
+            "p1": "Thank you for visiting my portfolio page!",
+            "p2": "I started my journey of learning web development in the summer of 2017, when I was talking with my cousin about possible career paths. He suggested that I take a look at web and software development, as he is currently working a full time developer. Not only that, it didn't necessarily matter that I received a Computer Science degree or not. Instead, I could take the time to learn and apply my skills as well as demonstrate that I know how to effectively do the job in order to get hired. After much thought and research, I made the decision to make this my career path.",
+            "p3": "After a few lessons on Free Code Camp and Treehouse, I started making my own projects and attending local meetups to learn from experienced developers. Along the way, I ran into multiple obstacles in my learning, but my new support network encouraged me to keep pushing forward. With each line of code I wrote, I gained more and more confidence in my work and knowledge of web development and created several static sites. Soon, my friends told me it was time to apply to jobs!",
+            "p4": "Finally, after applying for 70 jobs across the country, I finally got a job as a full time developer in Baltimore, MD! I am very thankful for all of the hard work I put in as well as the encouragement I received from my friends along this journey. The best part is I have come to realize that I have become a lifelong learner, gaining knowledge of new technologies and utilizing them in my new projects. In addition, I hope to inspire others to achieve their goals of becoming a developer as well since I attribute much of my success to the people who mentored me while I was learning code."
+        },
+        "skills": {
+            "h2": "What I know"
+        },
+        "community": {
+            "h2": "Community Outreach",
+            "p1": "I am proud to be a community leader in ",
+            "p2": ", a non-profit organization founded by my cousin with the goal of making a tech career possible for its members. ",
+            "p3": "We host educational meetups and have a network of mentors who are committed to assisting new developers in learning code and finding a rewarding job in the tech industry.",
+            "p4": "All of our meetups and events are located throughout the southeast United States. However, due to our recent growth, we are looking to expand our influence throughout the country, helping more people achieve their goals along the way!"
+        }
+    },
+    "projects": {
+        "intro": {
+            "h1": "My Projects"
+        },
+        "card": {
+            "caption": ["hello", "world", "!"]
+        }
+    },
+    "footer": {
+        "copy": "All rights reserved. Website designed and developed by Shane Harper.",
+        "social": "Follow me on social media!",
+        "about": "About this site",
+        "siteInfo": "Shane Harper is a self-taught front end web developer from Baltimore, MD. He has dedicated this site to showcase his current projects and skillset as well as to inspire others to achieve their goals of breaking into the tech career field. "
+    }
+}

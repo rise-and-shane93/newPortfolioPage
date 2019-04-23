@@ -1,0 +1,108 @@
+#project-cards {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-grow: 1;
+    @include mq('md') {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+}
+
+.project-card {
+    width: 300px;
+    height: 300px;
+    margin: 20px 10px;
+    perspective: 600px;
+    transition: .3s ease;
+    &:hover {
+        transition: .3s ease;
+        transform: scale(1.025);
+    }
+}
+
+.project-card > div {
+    width: 100%;
+    height: 100%;
+    transition: transform 1s;
+    transform-style: preserve-3d;
+    cursor: pointer;
+    position: relative;
+}
+
+.is-flipped {
+    transform: rotateY(180deg);
+}
+
+.card__face {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border: 1px solid #CCC;
+    border-radius: 10px;
+    // padding: 10px;
+}
+
+.card__face--front {
+    img {
+        width: 100%;
+    }
+}
+
+.card-face-text {
+    width: 85%;
+    margin: 0 auto;
+}
+
+
+.card__face--back {
+    transform: rotateY(180deg);
+}
+
+.skillList span {
+    color: #fff;
+    //text-shadow: -1px -1px 0 #555, 1px -1px 0 #555, -1px 1px 0 #555, 1px 1px 0 #555;
+    font-weight: bold;
+    border-radius: 1px solid #000;
+    font-size: 0.85rem;
+    padding: 5px;
+    border-radius: 10px;
+    margin-right: 5px;
+}
+
+.card {
+    &Html {
+        background: linear-gradient(180deg, rgba(229,76,33,1) 0%, rgba(241,101,36,1) 75%);
+    }
+    &Css {
+        background: linear-gradient(180deg, rgba(27,115,186,1) 71%, rgba(28,136,199,1) 96%);
+    }
+    &Js {
+        background-color: #F0DB4F;
+    }
+    &Jquery {
+        background-color: #0868AB;
+    }
+    &Api {
+        background-color: $darkTeal;
+    }
+    &Wp {
+        background-color: #32373C;
+    }
+    &Sass {
+        background-color: #CD679A;
+    }
+    &Gulp {
+        background-color: #E84C50;
+    }
+    &React {
+        background-color: #00D8FF;
+    }
+    &Webpack {
+        background: linear-gradient(180deg, rgba(142,213,250,1) 14%, rgba(28,120,192,1) 92%);
+    }
+    &Bs {
+        background: linear-gradient(56deg, rgba(14,5,55,1) 19%, rgba(91,42,78,1) 100%);
+    }
+}

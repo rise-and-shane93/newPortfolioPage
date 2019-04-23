@@ -1,0 +1,129 @@
+footer {
+    background-color: $midnight;
+    color: white;
+    margin: 0 -20px;
+    padding: 20px 75px;
+    display: grid;
+    grid-template-areas: 
+    "l"
+    "r"
+    "m";
+    @include mq('md') {
+        grid-template-areas: "l m r";
+        grid-template-columns: repeat(3,1fr);
+    }
+    // p {
+    //     font-size: 1.15rem;
+    // }
+}
+.fab, .fas {
+    //font-size: 1.5rem;
+    border-radius: 50%;
+    color: white;
+    background-color: $darkTeal;
+    border: 1px solid $darkTeal;
+}
+.fab {
+    font-size: 1.5rem;
+}
+.fa {
+    transition: .3s ease;
+    &-facebook-f {
+        padding: 10px 15px;
+    }
+    &-medium {
+        padding: 10px 12px;
+    }
+    &-linkedin {
+        padding: 10px 12px;
+    }
+    &-github {
+        padding: 10px 11px;
+    }
+    &-envelope {
+        padding: 5px;
+    }
+    &-map-marker-alt,
+    &-file {
+        padding: 5px 7px;
+    }
+    &-external-link-alt {
+        padding: 13px;
+        transform: translateY(-3px);
+        margin-right: 1rem;
+    }
+}
+.social-media-inner a {
+    transition: .3s ease;
+    &:hover {
+        transition: .3s ease;
+        color: $darkTeal;
+        background-color: #fff;
+    }
+}
+.footer {
+    &-left {
+        @include flexBox(row);
+        display: grid;
+        grid-template-areas: 
+        "l l"
+        "e e"
+        "r r"
+        "s s";
+        &-item {
+            @include flexBox(row, $align: center);
+            width: 200px;
+            //transform: translateX(75px);
+            &:nth-child(1) {
+                grid-area: l;
+            }
+            &:nth-child(2) {
+                grid-area: e;
+            }
+            &:nth-child(3) {
+                grid-area: r;
+            }
+        }
+        @include mq('md') {
+            flex-direction: column;
+        }
+        .social-media {
+            grid-area: s;
+            div{
+                @include flexBox(row, space-around, center);
+            }
+            i {
+                padding-top: 5px;
+
+                transition: .3s ease;
+                &:hover {
+                    cursor: pointer;
+                    transition: .3s ease;
+                    color: $darkTeal;
+                    background-color: #fff;
+                    border: 1px solid $darkTeal;
+                }
+            }
+        }
+    }
+    &-middle {
+        @include flexBox(column, center, center);
+        grid-area: m;
+        img {
+            width: 200px;
+        }
+        p {
+            text-align: center;
+        }
+    }
+    &-right {
+        @include flexBox(column, center, center);
+        grid-area: r;
+        p {
+            text-align: justify;
+        }
+    }
+}
+.footer-left, .footer-middle, .footer-right {
+    padding: 0 15px;
+}
