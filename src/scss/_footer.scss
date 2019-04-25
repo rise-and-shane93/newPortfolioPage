@@ -2,7 +2,7 @@ footer {
     background-color: $midnight;
     color: white;
     margin: 0 -20px;
-    padding: 20px 75px;
+    padding: 20px 50px;
     display: grid;
     grid-template-areas: 
     "l"
@@ -11,6 +11,8 @@ footer {
     @include mq('md') {
         grid-template-areas: "l m r";
         grid-template-columns: repeat(3,1fr);
+        padding-left: 75px;
+        padding-right: 75px;
     }
     // p {
     //     font-size: 1.15rem;
@@ -53,7 +55,8 @@ footer {
         margin-right: 1rem;
     }
 }
-.social-media-inner a {
+.social-media-inner a,
+.fa-github, .fa-external-link-alt {
     transition: .3s ease;
     &:hover {
         transition: .3s ease;

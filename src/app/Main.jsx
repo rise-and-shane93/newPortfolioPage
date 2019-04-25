@@ -9,6 +9,8 @@ import { MyContext } from '../context';
 import MainContent from './pages/MainContent';
 import About from './pages/About';
 import Projects from './pages/Projects';
+import Contact from './pages/Contact';
+import FeaturedProject from './pages/FeaturedProject';
 
 //Import components
 import Header from './components/Header';
@@ -27,7 +29,9 @@ const Main = () => {
                                     <div className="container">
                                         <Route exact path="/" render={() => <MainContent/>}/>
                                         <Route path="/about" render={()=> <About/>}/>
-                                        <Route exact path="/projects" render={()=> <Projects />}/>
+                                        <Route path="/projects" render={()=> <Projects />}/>
+                                        <Route path="/contact" render={()=> <Contact />}/>
+                                        <Route path="/featured-project" render={()=> <FeaturedProject />}/>
                                         <Footer />
                                     </div>{/* /.container */}
                                 </div>{/* /.site-content */}

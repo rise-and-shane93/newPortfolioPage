@@ -40,14 +40,65 @@
             "p2": ", a non-profit organization founded by my cousin with the goal of making a tech career possible for its members. ",
             "p3": "We host educational meetups and have a network of mentors who are committed to assisting new developers in learning code and finding a rewarding job in the tech industry.",
             "p4": "All of our meetups and events are located throughout the southeast United States. However, due to our recent growth, we are looking to expand our influence throughout the country, helping more people achieve their goals along the way!"
+        },
+        "blog": {
+            "h2": "Blog",
+            "p1": "I am also a new blogger on the site Medium! I am thankful to have published my first article through Code Connector and look forward to the articles to come.",
+            "p2": "Click on the link to read my first article! I hope that you will be inspired!"
         }
     },
     "projects": {
         "intro": {
             "h1": "My Projects"
+        }
+    },
+    "featured": {
+        "h1": "Featured Project",
+        "intro": {
+            "title": "Jestin Lewis",
+            "date": "March 2019",
+            "p": "In my attempt to make a single page application using plain HTML, CSS/Sass, and Javascript, I created a page for a good friend from college. His name is Jestin Lewis and is currently a professional basketball player in Germany. We aimed to promote Jestin's name and brand through his summer camp and merchandise sales."
         },
-        "card": {
-            "caption": ["hello", "world", "!"]
+        "p1": {
+            "p": "These were our goals for the site:",
+            "li1": "Design and develop a simple landing page",
+            "li2": "Advertise Jestin's annual basketball summer camp",
+            "li3": "Allow people to sign up for the camp through the site",
+            "li4": "Announce Jestin's online shop"
+        },
+        "p2": {
+            "one": "To start, I installed Gulp in the project files to automate and expedite my tasks. The tasks I ran not only compiled Sass to a minified CSS on save, but also reloaded the browser to preview my changes.",
+            "two": "As mentioned before, I used Sass instead of plain CSS. Not only was I able to write faster code, but I was also able to define important features. In addition, Gulp minified the CSS output to reduce on file size and improving site performance."
+        },
+        "p3": {
+            "one": "Since I adhere to mobile first design, not only did I initialize my Sass code for mobile devices, but I regularly viewed the site on a mobile device to ensure responsiveness.",
+            "two": "In addition, I used Bootstrap's navigation bar and grid features that makes it easy to develop for multiple screen sizes. For example, when a user accesses the site on a mobile device, the navigation bar becomes a dropdown menu instead of spanning the header.",
+            "three": "I also implemented a feature in the Javascript that loads a landscape photo on mobile and a portrait photo for desktop on the introduction section."
+        },
+        "p4": {
+            "one": "To advertise the summer camp, I included a promo image that he had been sharing on his Facebook page. I also included his contact information on the page. To allow people to sign up for the camp, I implemented a Google Form that Jestin to collect responses on a trusted platform that uses Recaptcha to prevent spam. In addition, Google provided me the HTML code to embed the form in the page!",
+            "two": "Jestin also wanted me to have a photo gallery of last year's camp. I used jQuery to show and hide the gallery at the click of a button.",
+            "three": "After adding in the gallery, I added the shop section. Although we have not officially launched the shop, we are looking to start an account through Shopify, which allows customers to purchase Jestin's products online in a secure manner."
+        },
+        "p5": {
+            "one": "In conclusion, I am very pleased with how this project turned out! Jestin is also very satisfied and has been sharing his new site's link on social media. I am happy with this project because I was able to use newer skills to take my web development passion to another level!",
+            "two": "BRO I LOVE IT!!!! Man Thank You so much!!!!"
+        }
+    },
+    "contact": {
+        "title": "Contact",
+        "p1": "I would love to get in touch with you! Please fill out the contact form below and I will reply as soon as possible.",
+        "p2": "I am also active on social media so feel free to follow me there too!",
+        "placeholder": {
+            "name": "Name (required)",
+            "email": "Email address (required)",
+            "sub": "Subject",
+            "msg": "Message",
+            "btn": "Submit"
+        },
+        "privacy": {
+            "p": "I agree to the ",
+            "a": "terms of service"
         }
     },
     "footer": {

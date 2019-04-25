@@ -6,6 +6,19 @@ h1, .text-center {
 .text-justify p {
     text-align: justify;
 }
+.text-left {
+    text-align: left;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Tauri', sans-serif;
+}
+p, a, button, span, li {
+    font-family: 'Abel', sans-serif;
+    line-height: 1.75;
+    @include mq('md') {
+        font-size: 1.15rem;
+    }
+}
 /*-----/Font styles-----*/
 /*-----Misc styles-----*/
 .hideBrOnMobile {
@@ -61,6 +74,11 @@ h1, .text-center {
     }
 }
 /*-----/Misc styles-----*/
+/*-----Container styles-----*/
+section {
+    margin: 0 -20px;
+}
+/*-----/Container styles-----*/
 /*-----Jumbotron-----*/
 .jumbotron {
     position: relative;
@@ -68,7 +86,7 @@ h1, .text-center {
     url("../images/coverPhotoLarge.png") center center / cover no-repeat;
     min-height: 200px;
     border-radius: 0 !important;
-    margin: 0 -20px;
+    // margin: 0 -20px;
     @include mq('sm') {
         min-height: 300px;
     }
@@ -137,9 +155,10 @@ h1, .text-center {
 /*-----Home-main-----*/
 article {
     @include blockCenter;
-    //max-width: 95%;
+    padding: 0 10px;
     @include mq('sm') {
         max-width: 85%;
+        padding: 0;
     }
     @include mq('md') {
         max-width: 65%;
@@ -174,5 +193,21 @@ article {
     height: 1px;
     background: linear-gradient(to left,#f0f0f0, #8c8b8b, #f0f0f0);
     max-width: 1000px;
+}
+.style1 {
+    display: block;
+    border: 0;
+    height: 3px;
+    background: $darkTeal;
+    max-width: 250px;
+    margin: 0;
+}
+.style2 {
+    border: 0; 
+    height: 1px;
+    background: linear-gradient(to left,#8c8b8b, $midnight, #8c8b8b);
+    max-width: 1000px;
+    margin-top: 2rem;
+    margin-bottom: 2rem; 
 }
 /*-----/Home-main-----*/

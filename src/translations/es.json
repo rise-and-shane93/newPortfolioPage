@@ -25,7 +25,7 @@
     },
     "about": {
         "bio": {
-            "h1": "Sobre Mi",
+            "h1": "Sobre Mí",
             "p1": "¡Gracias por visitar mi sitio web de portafolio!",
             "p2": "Yo comencé aprendiendo desarrollo web en el verano de 2017, cuando yo estaba conversando con mi primo sobre carreras posibles. Él me sugirió que yo investigara desarrollo web y software, que está trabajando como un desarrollador web a tiempo completo. Además, no fue necesario haber obtenido una licenciatura en Informática. En lugar de ello, yo pude utilizar mi tiempo libre para aprender y demonstrar mis aptitudes para que yo pudiera obtener un trabajo. Tras mucho pensamiento y investigación, yo decidí perseguir ser una desarrollador web.",
             "p3": "Después de hacer algunas lecciones en Free Code Camp y TreeHouse, yo empecé creando mis propio proyectos y asitiendo a reuniones locales para aprender de desarrolladores avanzados. Mientras tanto, enfrenté muchos obstaculos de aprendizaje. Sin embargo, mis nuevos amigos me animaron a seguir adelante. Con cada linea de código que escribí, yo gané más confianza en mi trabajo y conocimento de desarrollo web, creando un par de sitios web basicos. Justamente después, ¡mis amigos me contaron que era hora de postularme por trabajos!",
@@ -40,14 +40,65 @@
             "p2": ", una organización sin ánimo de lucro fundado por mi primo con la meta de hacer posible una carrera de technología por sus miembros. ",
             "p3": "Nosotros organizamos meetups de clases de technología y también tenemos una red extensiva de mentores. Nuestros mentores están comprometidos en ayudar a nuevos desarrolladores web en aprender informática y encontrar un trabajo excelente en la industria de tech. ",
             "p4": "Todos de nuestros meetups y eventos están ubicados por el sureste de los EEUU. Sin embargo, gracias al crecimiento de nuestra oganización, ¡deseamos expandir nuestra influencia por todo el país para que podamos ayudar a más personas a lograr sus metas!"
+        },
+        "blog": {
+            "h2": "Blog",
+            "p1": "¡Yo soy un nuevo blogger en el sitio web Medium! Estoy agradecido que he publicado mi primer blog con la colaboración de Code Connector y estoy emocionado por los blogs que vendrán.",
+            "p2": "Haz clic en el enlace para leer mi primer blog. ¡Ojalá que sea inspirante!"
         }
     },
     "projects": {
         "intro": {
             "h1": "Mis proyectos"
+        }
+    },
+    "featured": {
+        "h1": "Proyecto Destacado",
+        "intro": {
+            "title": "Jestin Lewis",
+            "date": "Marzo 2019",
+            "p": "Uno de mis primeros intentos en crear una aplicación usando HTML, CSS/Sass, y Javascript, yo hice una página web por un amigo de mi universidad. Él se llama Jestin Lewis y es un atleto profesional de baloncesto en la liga Alemana. Nosotros quisimos promover el nombre y marca de Jestin mediante su campamento del verano y venta de mercancía."
         },
-        "card": {
-            "caption": ["hola", "a", "todos"]
+        "p1": {
+            "p": "Estos eran las metas por el sitio web:",
+            "li1": "Diseñar y desarrollar una pagina de introducción simple",
+            "li2": "Promover el campamento anual de baloncesto",
+            "li3": "Permitir que personas se inscriban por el campamento",
+            "li4": "Hacer un anuncio de la tienda online"
+        },
+        "p2": {
+            "one": "Para comenzar, yo instalé Gulp en el proyecto para acelarar las tareas. Ese programa logró compilar Sass a CSS, minimizar el código de CSS y recargar el browser al guardar cualquier de las fichas.",
+            "two": "Como mencionado antes, yo utilizé Sass en vez de CSS normal. No solamente pude escribir código en menos tiempo, sino también definir características de estilo importantes. Además, la ficha minificada de CSS"
+        },
+        "p3": {
+            "one": "Por pertenecer al concepto de diseño por moviles, yo escribi mi código de Sass por moviles primero. Para asegurar que mi código produjo una página adaptable, yo revisaba la página en un móvil.",
+            "two": "Yo aproveché la barra de navigation y diseño cuadrícula de Bootstrap en este sitio web. Por ejemplo, si un usuario lo accede en su móvil, él/ella vería un menú desplegable en vez de la barra",
+            "three": "Finalmente, yo implementé parte de mi ficha de Javascript que muestra una foto en orientación horizontal por móviles y en vertical por pantallas más grandes. "
+        },
+        "p4": {
+            "one": "Para promover su campamento de baloncesto, yo incluyé una imagén de él con información del campamento. Yo también puse su información de contacto en el sitio web. Para permitir que la gente se inscriba, yo implementé un Google Form. Entonces, Jestin puede recibir las respuestas del Google Form sin preocuparse de spam porque también tiene Recaptcha incluida.",
+            "two": "Jestin quiso que yo pusiera las fotos del campamento del año pasado. Yo utilizé jQuery para mostrar y ocultar las fotos con un simple clic de un botón.",
+            "three": "Después de incorporar las fotos, yo agregue la tienda online. Aunque oficialmente no hemos lanzado la tienda, estamos por iniciar una cuenta de Shopify, la cuál permtitá que los clientes compran sus productos en una tienda online segura."
+        },
+        "p5": {
+            "one": "En fin, ¡estoy muy satisfecho con los resultados de este proyecto! Jestin también está muy feliz y ha compartido el enlace de su sitio web por las redes sociales. Para mi, ¡estoy muy optimista porque pude usar nuevas aptitudes para llevar mi passión de desarrollo web a un otro nivel!",
+            "two": "¡TÍO ME ENCANTA MUCHO! ¡Muchísimas gracias mi amigo!"
+        }
+    },
+    "contact": {
+        "title": "Contacto",
+        "p1": "¡Me gustaría ponerme en contacto contigo! Favor rellene el formulario de contacto y responderé tan pronto como posible.",
+        "p2": "Además, ¡me puedes seguir en las redes sociales!",
+        "placeholder": {
+            "name": "Nombre y apellido (necesario)",
+            "email": "Dirrección de correo electrónico (necesario)",
+            "sub": "Sujecto",
+            "msg": "Mensaje",
+            "btn": "Enviar"
+        },
+        "privacy": {
+            "p": "Estoy de acuerdo con los ",
+            "a": "terminos de servicio"
         }
     },
     "footer": {

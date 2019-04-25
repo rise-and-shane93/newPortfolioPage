@@ -11,6 +11,7 @@
 
 .langMenu {
     background-color: $darkTeal;
+    font-size: 1.25rem;
     a {
         padding: 5px;
         border-radius: 25px;
@@ -32,4 +33,5 @@
         background-color: $lightTeal;
         transition: .3s ease;
     }
+    font-size: 1.25rem;
 }

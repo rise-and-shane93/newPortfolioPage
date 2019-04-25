@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 //import logo from './logo.svg';
 import '../../scss/App.scss';
-import { MyContext } from '../../context'
+import { MyContext } from '../../context';
+import { NavLink } from 'react-router-dom';
 
 //Import translations
 import * as translationES from '../../translations/es';
@@ -76,17 +77,17 @@ const Intro = () => {
                         return <>
                         <a className="button-style2">
                         {translationES.home.featProj.viewSite}</a>
-                        <a className="button-style2">
+                        <NavLink to="/featured-project" className="button-style2" data-aos="fade-in">
                         {translationES.home.featProj.viewStudy}
-                        </a>
+                        </NavLink>
                         </>
                       } else {
                         return <>
                         <a className="button-style2">
                         {translationEN.home.featProj.viewSite}</a>
-                        <a className="button-style2">
+                        <NavLink to="/featured-project" className="button-style2" data-aos="fade-in">
                         {translationEN.home.featProj.viewStudy}
-                        </a>
+                        </NavLink>
                         </>
                       }
                     })()

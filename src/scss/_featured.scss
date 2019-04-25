@@ -1,0 +1,188 @@
+#article {
+    &-intro {
+        img {
+            @include blockCenter;
+            width: 80%;
+            @include mq('md') {
+                width: 550px;
+                margin-left: 1rem;
+            }
+        }
+        @include mq('md') {
+            @include flexBox(row, center, center);
+        }
+    }
+    &-body {
+        padding: 10px 0;
+    }
+}
+
+.case-study {
+    &-date {
+        color: $lightGrey;
+        font-size: 0.75rem;
+    }
+    &-intro {
+        h2 {
+            text-align: left;
+            width: 150px;
+            border-bottom: 2px solid $lightGrey;
+            padding-bottom: 1rem;
+        }
+        margin-right: 1rem;
+    }
+}
+
+iframe {
+    width: 100%;
+    height: 350px;
+    @include mq('md') {
+        width: 400px;
+        height: 350px;
+    }
+}
+
+#paragraph {
+    &1 {
+        div {
+            @include blockCenter;
+            width: 550px;
+        }
+    }
+    &2 {
+        img {
+            @include blockCenter;
+            max-width: 90%;
+        }
+        @include mq('md') {
+            @include flexBox(row, center, center);
+            img {
+                max-width: 400px;
+            }
+        }
+    }
+    &3 {
+        img {
+            @include blockCenter;
+        }
+        img:first-child {
+            max-width: 85%;
+            @include mq('md') {
+                max-width: 350px;
+                margin-right: 1rem;
+            }
+        }
+        img:last-child {
+            max-width: 45%;
+            @include mq('md') {
+                max-width: 150px;
+                margin-left: 1rem;
+            }
+        }
+        @include mq('md') {
+            @include flexBox(row, center, center);
+        }
+    }
+    &4 {
+        div:nth-child(2) {
+            @include mq('md') {
+                @include flexBox(row, center, center);
+            }
+            iframe, img {
+                @include blockCenter;
+                padding: 1rem 0;
+                @include mq('md') {
+                    margin: 1rem;
+                }
+            }
+            img {
+                max-width: 90%;
+                @include mq('md') {
+                    max-width: 500px;
+                }
+            }
+        }
+    }
+}
+
+#final-paragraph {
+    @include mq('md') {
+        @include flexBox(row-reverse, space-around, center);
+    }
+    div:first-child {
+        @include mq('md') {
+            width: 55%;
+        }
+    }
+    .jestin-quote {
+        padding: 5px;
+        border-left: 5px solid $darkTeal;
+        // border-radius: 37% 34% 56% 10% / 29% 28% 49% 38% ;
+        p:first-child {
+            margin-top: 0;
+            font-size: 1.05rem;
+            @include mq('md') {
+                font-size: 1.25rem;
+            }
+            color: $darkGrey;
+        }
+        span {
+            font-size: 1.5rem;
+            @include mq('md') {
+                font-size: 1.85rem;
+            }
+            color: $darkTeal;
+        }
+        p:last-child {
+            color: darken($lightGrey, 5%);
+            margin-bottom: 0;
+        }
+        @include mq('md') {
+            margin-right: 1rem;
+            width: 30%;
+        }
+    }
+    margin-bottom: 1rem;
+}
+
+#article-body {
+    background-color: lighten($lightGrey, 15%);
+}
+
+// blockquote {
+//     margin: 0 auto;
+//     padding: 1em;
+//     border-left: 5px solid #999;
+//   }
+//   blockquote:before {
+//     display: none;
+//   }
+//   blockquote:not(:first-of-type) {
+//     margin-top: .5em;
+//   }
+//   blockquote p {
+//     color: #555;
+//     font-size: 12pt;
+//     line-height: 1.4;
+//     font-family: 'PT Serif', Cambria, 'Hoefler Text', Utopia, 'Liberation Serif', 'Nimbus Roman No9 L Regular', Times, 'Times New Roman', serif;
+//   }
+//   blockquote footer {
+//     margin-top: .5em;
+//     padding: 0;
+//     color: #777;
+//     font-size: 12pt;
+//     text-align: left;
+//     font-style: italic;
+//   }
+//   blockquote footer:before {
+//     content: '— ';
+//   }
+  
+//   @element 'blockquote' and (min-width: 300px) {
+//     blockquote {
+//       padding: 1em 20% 1em 1em;
+//     }
+//     blockquote p {
+//       font-size: 14pt;
+//     }
+//   }

@@ -247,7 +247,7 @@ const cardContent = [
             en: {
                 frontDesc: "A Needed Update",
                 rearTitle: "Accomplishments",
-                rearDesc: "I realized that I had learned new concepts without updating my first website. Therefore, I got to work to demonstrate that I can create more complex sites"
+                rearDesc: "I realized that I had learned new concepts without updating my first website. Therefore, I got to work to demonstrate that I can create more complex sites."
             }
         },
         skillsUsed: {

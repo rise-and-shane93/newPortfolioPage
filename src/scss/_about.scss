@@ -140,13 +140,15 @@
 /*-----#codeconnector-----*/
 #community {
     background-color: lighten($lightGrey, 13%);
-    margin: 0 -20px;
     h2 {
         padding-top: 2rem;
     }
 }
 #codeconnector {
-    
+    img {
+        @include blockCenter;
+        max-width: 80%;
+    }
     @include mq('md') {
         @include flexBox(row, space-around, center);
         img {
@@ -156,3 +158,48 @@
     }
 }
 /*-----/#codeconnector-----*/
+
+#blog {
+    @include flexBox(column-reverse, center, center);
+    @include mq('md') {
+        flex-direction: row;
+    }
+}
+
+.blog-post {
+    @include mq('md') {
+        width: 40%;
+    }
+    img {
+        @include blockCenter;
+        max-width: 300px;
+        @include mq('md') {
+            max-width: 250px;
+        }
+    }
+    h3 {
+        color: #333;
+        transition: .3s ease;
+        &:hover {
+            transition: .3s ease;
+            color: $darkTeal;
+        }
+        //font-size: 0.85rem;
+    }
+    p {
+        color: #777;
+        font-size: 0.85rem;
+    }
+}
+
+.blog-text {
+    @include mq('md') {
+        width: 60%;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .blog-post h3, .blog-post p {
+        width: 300px;
+    }
+}

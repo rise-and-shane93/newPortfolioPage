@@ -184,6 +184,37 @@ const About = () => {
                 }
                 <img src={require("../../images/codeConnector.png")}/>
                 </article>
+                </section>
+                <section id="blog-section">
+                <h2 className="text-center">Blog</h2>
+                <article id="blog">
+                    <div className="blog-post">
+                        <img src={require("../../images/blog.png")} />
+                        <h3><a href="https://medium.com/codeconnective/from-depressed-college-student-to-excited-and-employed-web-developer-9087023a0e8c" target="_blank">
+                        From depressed college student<br/> 
+                        to excited (and employed) web developer</a></h3>
+                        <p>April 9, 2019</p>
+                        <hr className="style1"/>
+                        <p>After eating a late dinner at the school cafeteria,<br/>
+                        I returned to my dorm room to wind down.<br/> It was a Friday night 
+                        and the alcohol was flowing<br/> between the dorm rooms...</p>
+                    </div>
+                    {
+                        (() => {
+                            if (context.state.language === 'es') {
+                            return <div className="text-justify blog-text">
+                                <p>{translationES.about.blog.p1}</p>
+                                <p>{translationES.about.blog.p2}</p>
+                            </div>
+                            } else {
+                            return <div className="text-justify blog-text">
+                                <p>{translationEN.about.blog.p1}</p>
+                                <p>{translationEN.about.blog.p2}</p>
+                            </div>
+                            }
+                        })()
+                    }
+                </article>
             </section>
         </>
       )}

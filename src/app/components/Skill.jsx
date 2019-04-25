@@ -1,7 +1,12 @@
 import React, { Component } from 'react';
 import '../../scss/App.scss';
+import AOS from 'aos';
 
 class Skill extends Component {
+
+    componentDidMount() {
+        AOS.init();
+    }
 
     render() {
         const skillSet = Object.entries(this.props.skillset);
@@ -13,7 +18,7 @@ class Skill extends Component {
             </div>);
         }
         return(
-            <div className={this.props.divClass} id={this.props.key}>
+            <div className={this.props.divClass} id={this.props.key} data-aos="fade">
                 <h2 className={this.props.titleClass}>{this.props.name}</h2>
                 <hr className="style14"/>
                 <div className={this.props.skillInner}>
