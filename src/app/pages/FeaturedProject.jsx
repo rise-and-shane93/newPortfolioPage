@@ -45,7 +45,7 @@ class FeaturedProject extends Component {
                                     }
                                 })()
                             }
-                            <img src={require("../../images/jLewSite.jpg")} />
+                            <img src={require("../../images/jLewSite.jpg")} alt="A screenshot of Jestin Lewis's website on desktop and mobile"/>
                         </article>
                         <article id="paragraph1">
                             {
@@ -96,7 +96,7 @@ class FeaturedProject extends Component {
                         </article>
                         <hr className="style2"/>
                         <article id="paragraph3">
-                            <img src={require("../../images/jLewSiteDesk.png")}/>
+                            <img src={require("../../images/jLewSiteDesk.png")} alt="A screenshot of Jestin Lewis's website on desktop."/>
                             {
                                 (() => {
                                     if (context.state.language === 'es') {
@@ -114,7 +114,7 @@ class FeaturedProject extends Component {
                                     }
                                 })()
                             }
-                            <img src={require("../../images/jLewSitePhone.png")}/>
+                            <img src={require("../../images/jLewSitePhone.png")} alt="A screenshot of Jestin Lewis's website on mobile"/>
                         </article>
                     </section>
                     <section id="article-conclusion">

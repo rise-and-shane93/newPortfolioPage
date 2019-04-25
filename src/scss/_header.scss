@@ -57,7 +57,9 @@ a {
       width: 40px;
     }
   }
-  
+  .active {
+    color: $lightTeal;
+  }
   /* MENU */
   .menu {
     float: left;
@@ -71,11 +73,14 @@ a {
       @include mq('md') {
         padding: 0 10px;
         font-size: 1.5rem;
+        transition: .3s ease;
       }
+      
     }
     
     a:hover {
       color: #c5cae9;
+      transition: .3s ease;
     }
   }
   
@@ -156,7 +161,9 @@ a {
         line-height: 40px;
         
         border-bottom: 1px solid $header-bg;
+        
       }
+      
     }
     
     .with--sidebar {

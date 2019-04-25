@@ -101,7 +101,7 @@ const About = () => {
             }
             <article id="bio">
                 <div className="bio-image">
-                    <img src={require("../../images/shane2.jpg")} />
+                    <img src={require("../../images/shane2.jpg")} alt="An image of Shane Harper on the beach"/>
                 </div>
                 <div className="bio-text">
                 {
@@ -182,15 +182,15 @@ const About = () => {
                         }
                     })()
                 }
-                <img src={require("../../images/codeConnector.png")}/>
+                <img src={require("../../images/codeConnector.png")} alt="A collage of three images from Code Connector"/>
                 </article>
                 </section>
                 <section id="blog-section">
                 <h2 className="text-center">Blog</h2>
                 <article id="blog">
                     <div className="blog-post">
-                        <img src={require("../../images/blog.png")} />
-                        <h3><a href="https://medium.com/codeconnective/from-depressed-college-student-to-excited-and-employed-web-developer-9087023a0e8c" target="_blank">
+                        <img src={require("../../images/blog.png")} alt="The thumbnail image for my blog post"/>
+                        <h3><a href="https://medium.com/codeconnective/from-depressed-college-student-to-excited-and-employed-web-developer-9087023a0e8c" target="_blank" rel="noopener noreferrer">
                         From depressed college student<br/> 
                         to excited (and employed) web developer</a></h3>
                         <p>April 9, 2019</p>

@@ -32,7 +32,7 @@ class Footer extends Component {
                             <div className="icon">
                                 <i className="fas fa-file"></i>
                             </div>
-                            <p><a href="https://shanecharper.com/ShaneResume.pdf" target="_blank">&nbsp;Resume</a></p>
+                            <p><a href="https://shanecharper.com/ShaneResume.pdf" target="_blank" rel="noopener noreferrer">&nbsp;Resume</a></p>
                         </div>
                         
                         <div className="social-media">
@@ -49,16 +49,16 @@ class Footer extends Component {
                             </p>
                             <div className="social-media-inner">
                                 <a href="https://www.facebook.com/shane.harper.73" 
-                                    target="_blank" className="fab fa-facebook-f">
+                                    target="_blank" className="fab fa-facebook-f" rel="noopener noreferrer">
                                 </a>
                                 <a href="https://medium.com/@cdtharper" 
-                                    target="_blank" className="fab fa-medium">
+                                    target="_blank" className="fab fa-medium" rel="noopener noreferrer">
                                 </a>
                                 <a href="https://www.linkedin.com/in/shane-harper-84390ab7/" 
-                                    target="_blank" className="fab fa-linkedin">
+                                    target="_blank" className="fab fa-linkedin" rel="noopener noreferrer">
                                 </a>
                                 <a href="https://github.com/rise-and-shane93" 
-                                    target="_blank" className="fab fa-github">
+                                    target="_blank" className="fab fa-github" rel="noopener noreferrer">
                                 </a>
                             </div>
                         </div>

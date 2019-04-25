@@ -13,7 +13,7 @@ class Skill extends Component {
         var list = [];
         for (const [skill, url] of skillSet) {
             list.push(<div className="skill-entry">
-            <img src={url} />
+            <img src={url} alt="A picture logo of the specific skill"/>
             <p>{skill}</p>
             </div>);
         }

@@ -1,8 +1,5 @@
 //Imports
 import React, { Component } from 'react';
-import { Route } from 'react-router-dom';
-import ReactDOM from 'react-dom';
-import Lightbox from 'react-image-lightbox';
 import "react-image-lightbox/style.css";
 
 //Import Context
@@ -14,30 +11,6 @@ import Card from '../components/Card';
 // Import translations
 import translationES from '../../translations/es'
 import translationEN from '../../translations/en'
-
-const images = [
-    '/gulp.jpg',
-    '/html5.png',
-    '/npm.png'
-]
-
-const captionsEN = [
-    "hello",
-    "world",
-    "!"
-];
-
-const captions = [
-    "hello",
-    "world",
-    "!"
-];
-
-const captionsES = [
-    "hola",
-    "a",
-    "todos"
-]
 
 const cardContent = [
     {
@@ -366,35 +339,7 @@ const cardContent = [
 
 class Projects extends Component {
 
-    constructor(props) {
-        super(props);
-
-        this.state = {
-            photoIndex: 0,
-            isOpen: false,
-            caption: 0
-        };
-    }
-
-    openModal = (index) => {
-        this.setState({
-            isOpen: true,
-            photoIndex: index,
-            caption: index
-        });
-    }
-
-    handleCaptionChange = (text) => {
-        if (this.state.isOpen) {
-            this.setState({
-                caption: text
-            });
-        }
-    }
-
     render() {
-        console.log(this.imageCaption);
-        const { photoIndex, isOpen, caption } = this.state;
         
         var list = [];
         for (var i = 0; i < cardContent.length; i++) {

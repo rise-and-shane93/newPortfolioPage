@@ -11,6 +11,7 @@ import About from './pages/About';
 import Projects from './pages/Projects';
 import Contact from './pages/Contact';
 import FeaturedProject from './pages/FeaturedProject';
+import PrivacyPolicy from './pages/privacyPolicy';
 
 //Import components
 import Header from './components/Header';
@@ -32,6 +33,7 @@ const Main = () => {
                                         <Route path="/projects" render={()=> <Projects />}/>
                                         <Route path="/contact" render={()=> <Contact />}/>
                                         <Route path="/featured-project" render={()=> <FeaturedProject />}/>
+                                        <Route path="/privacy-policy" render = {()=> <PrivacyPolicy/>}/>
                                         <Footer />
                                     </div>{/* /.container */}
                                 </div>{/* /.site-content */}

@@ -130,3 +130,12 @@ footer {
 .footer-left, .footer-middle, .footer-right {
     padding: 0 15px;
 }
+
+.privacyPolicyLink {
+    color: $darkTeal;
+    &:hover {
+        color: $lightTeal;
+        text-decoration: underline;
+        text-decoration-color: $lightTeal; 
+    }
+}

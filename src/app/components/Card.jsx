@@ -1,6 +1,5 @@
 //Imports
 import React, { Component } from 'react';
-import Lightbox from 'react-image-lightbox';
 
 //Import Context
 import { MyContext } from '../../context';
@@ -15,20 +14,12 @@ class Card extends Component {
             this.flipCard = this.flipCard.bind(this);
         }
 
-        // state = {
-        //     flipped: false,
-        // }
-
         flipCard() {
             this.setState({ flipped: !this.state.flipped });
         }
 
-        
-
         render() {
             const {
-                index,
-                openModal,
                 cardTitle,
                 cardImage,
                 desc,
@@ -53,7 +44,7 @@ class Card extends Component {
                     <div className={this.state.flipped ? "is-flipped" : null} onClick={this.flipCard} >
                         <div className="card__face card__face--front">
                             {/* <img src={require(images[index])} /> */}
-                            <img src={cardImage} />
+                            <img src={cardImage} alt="A screenshot of a project that I worked on."/>
                             <div className="card-face-text">
                             <h4>{cardTitle}</h4>
                             {
@@ -86,8 +77,8 @@ class Card extends Component {
                                 }
                                 <p className="skillList">{list}</p>
                                 <div className="back-links">
-                                    <a href={siteLink} target="_blank" className="fas fa-external-link-alt"></a>
-                                    <a href={ghLink} target="_blank" className="fab fa-github"></a>
+                                    <a href={siteLink} target="_blank"  rel="noopener noreferrer" className="fas fa-external-link-alt" alt="Website's external link"></a>
+                                    <a href={ghLink} target="_blank"  rel="noopener noreferrer" className="fab fa-github" alt="GitHub repository link"></a>
                                 </div>
                             </div>
                         </div>

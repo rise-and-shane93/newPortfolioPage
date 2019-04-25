@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 //import logo from './logo.svg';
 import '../../scss/App.scss';
 import { MyContext } from '../../context';
@@ -75,7 +75,7 @@ const Intro = () => {
                     (() => {
                       if (context.state.language === 'es') {
                         return <>
-                        <a className="button-style2">
+                        <a className="button-style2" href="https://www.jestinlewis.com/home" target="_blank" rel="noopener noreferrer">
                         {translationES.home.featProj.viewSite}</a>
                         <NavLink to="/featured-project" className="button-style2" data-aos="fade-in">
                         {translationES.home.featProj.viewStudy}
@@ -83,7 +83,7 @@ const Intro = () => {
                         </>
                       } else {
                         return <>
-                        <a className="button-style2">
+                        <a className="button-style2" href="https://www.jestinlewis.com/home" target="_blank" rel="noopener noreferrer">
                         {translationEN.home.featProj.viewSite}</a>
                         <NavLink to="/featured-project" className="button-style2" data-aos="fade-in">
                         {translationEN.home.featProj.viewStudy}
@@ -93,7 +93,7 @@ const Intro = () => {
                     })()
                 }
                     </div>
-                    <img src={require("../../images/jLewSite.jpg")} />
+                    <img src={require("../../images/jLewSite.jpg")} alt="A screenshot of Jestin Lewis's website on desktop and mobile"/>
                 </div>
                 </article>
                 </>

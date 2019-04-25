@@ -1,5 +1,6 @@
 //Imports
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
 
 // Import context and provider
 import { MyContext } from '../../context'
@@ -53,7 +54,7 @@ class Contact extends Component {
                                 placeholder={translationES.contact.placeholder.msg} rows="7" required></textarea>
 
                                 <div className="checkbox"><input type="checkbox" name="contact_checkbox" value="privacy-policy" required />
-                                <p>{translationES.contact.privacy.p}<a href="#">{translationES.contact.privacy.a}</a>.</p></div>
+                                <p>{translationES.contact.privacy.p}<Link to="/privacy-policy" className="privacyPolicyLink">{translationES.contact.privacy.a}</Link>.</p></div>
 
                                 <button type="submit" name="contact_form_submit" 
                                 className="form-button">{translationES.contact.placeholder.btn}</button>
@@ -73,7 +74,7 @@ class Contact extends Component {
                                 placeholder={translationEN.contact.placeholder.msg} rows="7" required></textarea>
 
                                 <div className="checkbox"><input type="checkbox" name="contact_checkbox" value="privacy-policy" required />
-                                <p>{translationEN.contact.privacy.p}<a href="#">{translationEN.contact.privacy.a}</a>.</p></div>
+                                <p>{translationEN.contact.privacy.p}<Link to="/privacy-policy" className="privacyPolicyLink">{translationEN.contact.privacy.a}</Link>.</p></div>
 
                                 <button type="submit" name="contact_form_submit" 
                                 className="form-button">{translationEN.contact.placeholder.btn}</button>

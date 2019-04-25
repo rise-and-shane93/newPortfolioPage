@@ -31,10 +31,10 @@ class Header extends Component {
       // </header>
       <header className="header">
         
-        <a href="#" className="header__icon" id="header__icon" title={this.props.title} alt={this.props.title}></a>
-        <a href="#" className="header__logo">
-          <img src={require("../../images/logo2.png")}/>
-        </a>
+        <span className="header__icon" id="header__icon" title={this.props.title} alt={this.props.title}></span>
+        <NavLink className="header__logo" exact to="/">
+          <img src={require("../../images/logo2.png")} alt="Shane Harper's logo"/>
+        </NavLink>
         
         {/* <nav className="menu">
           <NavLink exact to="/">Home</NavLink>
@@ -88,23 +88,23 @@ class Header extends Component {
                   </NavLink>
                 </div>
                 <div className="langMenu"> */}
-                  <a
+                  <span
                     
                     onClick={this.props.context.changeLanguage}
                     data-language="en"
                   >
                     English
-                  </a>
+                  </span>
 
                   <span className="nav-divider">&nbsp;&nbsp;/&nbsp;&nbsp;</span>
 
-                  <a
+                  <span
                     
                     onClick={this.props.context.changeLanguage}
                     data-language="es"
                   >
                     Espa&ntilde;ol
-                  </a>
+                  </span>
 
             </div>}
             {<button className={this.props.context.state.isNavOpen ? 'nav-toggler nav-toggler--open' : 'nav-toggler'} 

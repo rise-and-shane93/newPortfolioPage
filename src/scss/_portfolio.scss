@@ -14,7 +14,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 p, a, button, span, li {
     font-family: 'Abel', sans-serif;
-    line-height: 1.75;
+    line-height: 1.55;
     @include mq('md') {
         font-size: 1.15rem;
     }
