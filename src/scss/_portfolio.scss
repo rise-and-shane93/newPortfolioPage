@@ -63,13 +63,13 @@ p, a, button, span, li {
         }
     }
     &-style2 {
-        border: 2px solid $lightTeal;
+        border: 2px solid $darkTeal;
         color: #fff;
-        background-color: $lightTeal;
+        background-color: $darkTeal;
         &:hover {
             background-color: #fff;
             color: $lightTeal;
-            border: 2px solid $lightTeal;
+            border: 2px solid $darkTeal;
         }
     }
 }

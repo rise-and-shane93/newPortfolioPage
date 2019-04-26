@@ -93,7 +93,7 @@ class Header extends Component {
                     onClick={this.props.context.changeLanguage}
                     data-language="en"
                   >
-                    English
+                    EN
                   </span>
 
                   <span className="nav-divider">&nbsp;&nbsp;/&nbsp;&nbsp;</span>
@@ -103,7 +103,7 @@ class Header extends Component {
                     onClick={this.props.context.changeLanguage}
                     data-language="es"
                   >
-                    Espa&ntilde;ol
+                    ES
                   </span>
 
             </div>}
@@ -124,9 +124,9 @@ class Header extends Component {
               {
                       (() => {
                         if (this.props.context.state.language === 'es') {
-                          return 'Español'
+                          return 'ES'
                         } else {
-                          return 'English'
+                          return 'EN'
                         }
                       })()
                     }

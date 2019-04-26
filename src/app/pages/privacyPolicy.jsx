@@ -1,9 +1,17 @@
-import React from 'react';
+import React, { Component } from 'react';
 import '../../scss/App.scss';
 import { MyContext } from '../../context';
 
 
-const privacyPolicy = () => {
+class privacyPolicy extends Component {
+    componentDidMount() {
+        window.scrollTo(0,0);
+        document.body.classList.toggle("with--sidebar");
+    }
+    render() {
+
+    
+
     return(
         <MyContext.Consumer>
             {(context) => (
@@ -247,6 +255,7 @@ const privacyPolicy = () => {
             )}
         </MyContext.Consumer>
     );
+    }
 }
 
 export default privacyPolicy;

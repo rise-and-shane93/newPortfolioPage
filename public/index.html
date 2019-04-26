@@ -57,6 +57,10 @@
     e.preventDefault();
     $('body').toggleClass('with--sidebar');
   });
+
+  $('.menu a').click(function() {
+    window.scrollTo(0,0);
+  });
   
   $('#site-cache').click(function(e){
     $('body').removeClass('with--sidebar');

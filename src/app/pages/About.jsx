@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { Component } from 'react'
 
 // Import context and provider
 import { MyContext } from '../../context'
@@ -13,73 +13,81 @@ import translationEN from '../../translations/en'
 // Import CSS
 import '../../app/styles/components/links.css'
 
-const About = () => {
-
-    const skills = [
-        {
-            name: "HTML",
-            id: "html",
-            skillset: {
-                HTML5: "/html5.png",
-                Emmet: "/emmet.png",
-                Bootstrap: "/bootstrap.png"
-            }
-        },
-        {
-            name: "CSS",
-            id: "css",
-            skillset: {
-                CSS3: "/css3.png",
-                Sass: "/sass.png",
-                Flexbox: "/flexbox.jpg",
-                Grid: "/grid.png"
-            }
-        },
-        {
-            name: "JavaScript",
-            id: "javascript",
-            skillset: {
-                VanillaJS: "/javascript.png",
-                React: "/react.png",
-                jQuery: "/jQuery.gif",
-                AJAX: "/ajax.png"
-            }
-        },
-        {
-            name: "Build Tools",
-            id: "build",
-            skillset: {
-                Gulp: "/gulp.jpg",
-                Webpack: "/webpack.png",
-                NPM: "/npm.png"
-            }
-        },
-        {
-            name: "CMS",
-            id: "cms",
-            skillset: {
-                WordPress: "/wordpress.png"
-            }
-        },
-        {
-            name: "Other",
-            id: "other",
-            skillset: {
-                Shell: "/terminal.png",
-                Git: "/git.png",
-                GitHub: "/github.png",
-                Accessibility: "/accessibility.png"
-            }
-        },
-        {
-            name: "Text Editors",
-            id: "software",
-            skillset: {
-                VScode: "/vscode.png",
-                Sublime: "/sublime.png"
-            }
+const skills = [
+    {
+        name: "HTML",
+        id: "html",
+        skillset: {
+            HTML5: "/html5.png",
+            Emmet: "/emmet.png",
+            Bootstrap: "/bootstrap.png"
         }
-    ]
+    },
+    {
+        name: "CSS",
+        id: "css",
+        skillset: {
+            CSS3: "/css3.png",
+            Sass: "/sass.png",
+            Flexbox: "/flexbox.jpg",
+            Grid: "/grid.png"
+        }
+    },
+    {
+        name: "JavaScript",
+        id: "javascript",
+        skillset: {
+            VanillaJS: "/javascript.png",
+            React: "/react.png",
+            jQuery: "/jQuery.gif",
+            AJAX: "/ajax.png"
+        }
+    },
+    {
+        name: "Build Tools",
+        id: "build",
+        skillset: {
+            Gulp: "/gulp.jpg",
+            Webpack: "/webpack.png",
+            NPM: "/npm.png"
+        }
+    },
+    {
+        name: "CMS",
+        id: "cms",
+        skillset: {
+            WordPress: "/wordpress.png"
+        }
+    },
+    {
+        name: "Other",
+        id: "other",
+        skillset: {
+            Shell: "/terminal.png",
+            Git: "/git.png",
+            GitHub: "/github.png",
+            Accessibility: "/accessibility.png"
+        }
+    },
+    {
+        name: "Text Editors",
+        id: "software",
+        skillset: {
+            VScode: "/vscode.png",
+            Sublime: "/sublime.png"
+        }
+    }
+]
+
+class About extends Component {
+
+    componentDidMount() {
+        window.scrollTo(0,0);
+        document.body.classList.toggle("with--sidebar");
+    }
+
+    render() {
+    
 
   return (
     <MyContext.Consumer>
@@ -220,6 +228,7 @@ const About = () => {
       )}
     </MyContext.Consumer>
   )
+                }
 }
 
 export default About;

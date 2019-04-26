@@ -13,6 +13,12 @@ import translationES from '../../translations/es'
 import translationEN from '../../translations/en'
 
 class Contact extends Component {
+    
+    componentDidMount() {
+        window.scrollTo(0,0);
+        document.body.classList.toggle("with--sidebar");
+    }
+
     render() {
         return(
             <MyContext.Consumer>

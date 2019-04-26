@@ -339,6 +339,11 @@ const cardContent = [
 
 class Projects extends Component {
 
+    componentDidMount() {
+        window.scrollTo(0,0);
+        document.body.classList.toggle("with--sidebar");
+    }
+
     render() {
         
         var list = [];

@@ -1,10 +1,18 @@
-import React from 'react';
+import React, { Component } from 'react';
 //import logo from './logo.svg';
 import '../../scss/App.scss';
 import Jumbo from './Jumbo';
 import Intro from './Intro';
 
-const MainContent = () => {
+class MainContent extends Component {
+    componentDidMount() {
+        window.scrollTo(0,0);
+        document.body.classList.toggle("with--sidebar");
+    }
+
+    render() {
+
+
     return (
         <>
             <section id="welcome">
@@ -14,7 +22,8 @@ const MainContent = () => {
                 <Intro />
             </section>
         </>
-    )
+    );
+    }
 }
   
 export default MainContent;

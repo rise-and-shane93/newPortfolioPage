@@ -32,7 +32,17 @@ class Footer extends Component {
                             <div className="icon">
                                 <i className="fas fa-file"></i>
                             </div>
-                            <p><a href="https://shanecharper.com/ShaneResume.pdf" target="_blank" rel="noopener noreferrer">&nbsp;Resume</a></p>
+                            <p>
+                            {
+                                (() => {
+                                    if (context.state.language === 'es') {
+                                    return <a href="https://shanecharper.com/ShaneResume_ES.pdf" target="_blank" rel="noopener noreferrer">&nbsp;Resume</a>
+                                    } else {
+                                    return <a href="https://shanecharper.com/ShaneResume.pdf" target="_blank" rel="noopener noreferrer">&nbsp;Resume</a>
+                                    }
+                                })()
+                            }
+                            </p>
                         </div>
                         
                         <div className="social-media">
