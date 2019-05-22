@@ -16,6 +16,7 @@ import PrivacyPolicy from './pages/privacyPolicy';
 //Import components
 import Header from './components/Header';
 import Footer from './components/Footer';
+import UpArrow from './components/UpArrow';
 
 //Component Implementation
 const Main = () => {
@@ -34,6 +35,7 @@ const Main = () => {
                                         <Route path="/contact" render={()=> <Contact />}/>
                                         <Route path="/featured-project" render={()=> <FeaturedProject />}/>
                                         <Route path="/privacy-policy" render = {()=> <PrivacyPolicy/>}/>
+                                        <UpArrow class="upArrow"/>
                                         <Footer />
                                     </div>{/* /.container */}
                                 </div>{/* /.site-content */}

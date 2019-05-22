@@ -11,12 +11,9 @@ import { MyProvider } from './context';
 //Import Main component
 import Main from './app/Main';
 
-//Import AOs
-import AOS from 'aos';
-
 //Create App component
 const App = () => {
-    AOS.init();
+    //AOS.init();
     return(
         <MyProvider>
             <BrowserRouter>

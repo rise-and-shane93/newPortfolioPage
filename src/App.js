@@ -10,12 +10,14 @@ import Header from './components/Header';
 import MainContent from './components/MainContent';
 import About from './components/About';
 import Projects from './pages/Projects';
+import ScrollToTop from './components/ScrollToTop';
 
 class App extends Component {
   render() {
     return (
       <MyProvider>
         <BrowserRouter>
+        <ScrollToTop>
           <div className="site-container">
             <div className="site-pusher">
               <Header className="App-header App" title="Menu"/>
@@ -31,6 +33,7 @@ class App extends Component {
               <div className="site-cache" id="site-cache"></div>{/* /.site-cache */}
             </div>{/* /.site-pusher */}
           </div>{/* /.site-container */}
+          </ScrollToTop>
         </BrowserRouter>
       </MyProvider>
     );
