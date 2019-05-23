@@ -137,8 +137,8 @@ class FeaturedProject extends Component {
                                 })()
                             }
                             <div className="paragraph4-images">
-                                <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScgXh66GVn3rU3PEHdPWRn8u4yRsdTxry15RadFQtwUxXqrUg/viewform?embedded=true" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
-                                <img src={require("../../images/jLewGallery.gif")}/>
+                                <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScgXh66GVn3rU3PEHdPWRn8u4yRsdTxry15RadFQtwUxXqrUg/viewform?embedded=true" frameborder="0" marginheight="0" marginwidth="0" title="Example of a Google Form">Loading...</iframe>
+                                <img src={require("../../images/jLewGallery.gif")} alt="How the gallery opens and closes on the page"/>
                             </div>
                         </article>
                         <hr className="style2"/>

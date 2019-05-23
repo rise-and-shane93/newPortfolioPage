@@ -13,7 +13,6 @@ import Main from './app/Main';
 
 //Create App component
 const App = () => {
-    //AOS.init();
     return(
         <MyProvider>
             <BrowserRouter>

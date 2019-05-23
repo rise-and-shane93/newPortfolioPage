@@ -19,7 +19,7 @@ class MainContent extends Component {
         } else {
             window.scrollTo(0,0);
         }
-        document.body.classList.toggle("with--sidebar");
+        document.body.classList.remove("with--sidebar");
     }
 
     render() {

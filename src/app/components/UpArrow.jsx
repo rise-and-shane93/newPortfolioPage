@@ -16,7 +16,7 @@ class UpArrow extends Component {
         }
 
         showOnScroll() {
-            if(window.pageYOffset >= 100) {
+            if(window.pageYOffset >= 200) {
                 this.setState({scroll: true});
             } else {
                 this.setState({scroll: false});
@@ -25,13 +25,13 @@ class UpArrow extends Component {
 
         scrollToTop() {
             window.scroll({top: 0, left: 0, behavior: 'smooth' });
-            this.setState({scroll: !this.state.scroll});
+            //this.setState({scroll: false});
         }
 
         render() {
         
             return(
-                <div className={this.props.class} onClick={this.scrollToTop}>
+                <div className={this.props.class} onClick={this.scrollToTop} title="Click to scroll to top!">
                     <div className={this.state.scroll ? "show" : "hide"}>
                         <i className="fas fa-angle-up"></i>
                     </div>

@@ -109,3 +109,11 @@
         background: linear-gradient(56deg, rgba(14,5,55,1) 19%, rgba(91,42,78,1) 100%);
     }
 }
+
+.cardIconDesc {
+    height: 1px;
+    width: 1px;
+    position: absolute;
+    overflow: hidden;
+    top: -10px;
+}
