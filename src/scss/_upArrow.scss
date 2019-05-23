@@ -1,0 +1,32 @@
+.upArrow div{
+    position: fixed;
+    bottom: 20px;
+    right: 15px;
+    background-color: $darkTeal;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    i {
+        font-size: 30px;
+        transform: translate(15px, 9px);
+        background: none;
+        border: none;
+    }
+    transition: all .3s;
+    &:hover {
+        cursor: pointer;
+        background-color: $lightTeal;
+        box-shadow: 0 5px 15px 0px #888;
+    }
+}
+
+.show {
+    display: block;
+    transition: all .3s;
+}
+
+.hide {
+    display:none;
+    transition: all .3s;
+}
+

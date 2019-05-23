@@ -82,7 +82,19 @@ const skills = [
 class About extends Component {
 
     componentDidMount() {
-        window.scrollTo(0,0);
+        if ( navigator.userAgent.match(/Android/i)
+        || navigator.userAgent.match(/webOS/i)
+        || navigator.userAgent.match(/iPhone/i)
+        || navigator.userAgent.match(/iPad/i)
+        || navigator.userAgent.match(/iPod/i)
+        || navigator.userAgent.match(/BlackBerry/i)
+        || navigator.userAgent.match(/Windows Phone/i)
+        ) {
+            var element = document.getElementById('about');
+            element.scrollIntoView();
+        } else {
+            window.scrollTo(0,0);
+        }
         document.body.classList.toggle("with--sidebar");
     }
 
@@ -109,7 +121,7 @@ class About extends Component {
             }
             <article id="bio">
                 <div className="bio-image">
-                    <img src={require("../../images/shane2.jpg")} alt="An image of Shane Harper on the beach"/>
+                    <img src={require("../../images/shane2.jpg")} alt="Shane Harper on the beach"/>
                 </div>
                 <div className="bio-text">
                 {
@@ -197,7 +209,7 @@ class About extends Component {
                 <h2 className="text-center">Blog</h2>
                 <article id="blog">
                     <div className="blog-post">
-                        <img src={require("../../images/blog.png")} alt="The thumbnail image for my blog post"/>
+                        <img src={require("../../images/blog.png")} alt="The thumbnail for my blog post"/>
                         <h3><a href="https://medium.com/codeconnective/from-depressed-college-student-to-excited-and-employed-web-developer-9087023a0e8c" target="_blank" rel="noopener noreferrer">
                         From depressed college student<br/> 
                         to excited (and employed) web developer</a></h3>
