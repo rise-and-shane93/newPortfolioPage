@@ -15,7 +15,7 @@ import * as translationES from '../../translations/es';
 class Header extends Component {
   render() {
     return (
-      <header className="header">
+      <header className="header" id="app-header">
         
         <span className="header__icon" id="header__icon" title={this.props.title} alt={this.props.title}></span>
         <NavLink className="header__logo" exact to="/">

@@ -23,7 +23,7 @@ class Contact extends Component {
         || navigator.userAgent.match(/BlackBerry/i)
         || navigator.userAgent.match(/Windows Phone/i)
         ) {
-            var element = document.getElementById('contact');
+            var element = document.getElementById('app-header');
             element.scrollIntoView();
         } else {
             window.scrollTo(0,0);

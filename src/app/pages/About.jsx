@@ -90,7 +90,7 @@ class About extends Component {
         || navigator.userAgent.match(/BlackBerry/i)
         || navigator.userAgent.match(/Windows Phone/i)
         ) {
-            var element = document.getElementById('about');
+            var element = document.getElementById('app-header');
             element.scrollIntoView();
         } else {
             window.scrollTo(0,0);
