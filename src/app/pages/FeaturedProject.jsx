@@ -20,8 +20,10 @@ class FeaturedProject extends Component {
         || navigator.userAgent.match(/BlackBerry/i)
         || navigator.userAgent.match(/Windows Phone/i)
         ) {
-            var element = document.getElementById('app-header');
+            var element = document.getElementById('featured-project-intro');
+            var header = document.getElementById('app-header');
             element.scrollIntoView();
+            header.scrollIntoView();
         } else {
             window.scrollTo(0,0);
         }
