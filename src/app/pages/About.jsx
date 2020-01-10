@@ -19,7 +19,6 @@ const skills = [
         id: "html",
         skillset: {
             HTML5: "/html5.png",
-            Emmet: "/emmet.png",
             Bootstrap: "/bootstrap.png"
         }
     },
@@ -39,7 +38,7 @@ const skills = [
         skillset: {
             VanillaJS: "/javascript.png",
             React: "/react.png",
-            jQuery: "/jQuery.gif",
+            Redux: "/redux.png",
             AJAX: "/ajax.png"
         }
     },
@@ -60,12 +59,22 @@ const skills = [
         }
     },
     {
+        name: "Backend",
+        id: "backend",
+        skillset: {
+            NodeJs: "/node.jpg",
+            ExpressJs: "/express.jpeg",
+            MongoDB: "/mongodb.png",
+            Handlebars: "/handlebars.png"
+        }
+    },
+    {
         name: "Other",
         id: "other",
         skillset: {
-            Shell: "/terminal.png",
+            Terminal: "/terminal.png",
             Git: "/git.png",
-            GitHub: "/github.png",
+            AWS: "/aws.png",
             Accessibility: "/accessibility.png"
         }
     },
@@ -73,8 +82,7 @@ const skills = [
         name: "Text Editors",
         id: "software",
         skillset: {
-            VScode: "/vscode.png",
-            Sublime: "/sublime.png"
+            VScode: "/vscode.png"
         }
     }
 ]

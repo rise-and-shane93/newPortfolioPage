@@ -102,6 +102,12 @@
     &React {
         background-color: #00D8FF;
     }
+    &Redux {
+        background-color: purple;
+    }
+    &Node, &Mongo {
+        background-color: green;
+    }
     &Webpack {
         background: linear-gradient(180deg, rgba(142,213,250,1) 14%, rgba(28,120,192,1) 92%);
     }

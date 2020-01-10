@@ -51,6 +51,8 @@
         }
         .skill-inner {
             display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
         }
     }
     &:nth-child(2) {
@@ -114,9 +116,7 @@
         }
         .skill-inner {
             @include flexBox(row, space-around, center);
-            @include mq('md') {
-                @include flexBox(column, center, center);
-            }
+            flex-wrap: wrap;
         }
     }
     &-entry {

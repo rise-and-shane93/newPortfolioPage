@@ -37,33 +37,33 @@ const cardContent = [
         siteLink: "https://rise-and-shane93.github.io/Adena-Mary-Kay-old/",
         ghLink: "https://github.com/rise-and-shane93/Adena-Mary-Kay-old"
     },
-    {
-        title: "RC's Getaway",
-        id: 2,
-        image: "/rcsGetaway.png",
-        text: {
-            es: {
-                frontDesc: "¡Su escape en el verano!",
-                rearTitle: "Mis Logros",
-                rearDesc: "Yo ayudé a una clienta en patrocinar su condominio en la ciudad de Panama City Beach, Florída. También implementé el concepto diseño responsive a móvil."
-            },
-            en: {
-                frontDesc: "Summer Getaway!",
-                rearTitle: "Accomplishments",
-                rearDesc: "I assisted a client in advertising her condominium in Panama City Beach, FL. I also implemented responsive design concepts to make it mobile friendly."
-            }
-        },
-        skillsUsed: {
-            cardHtml: "HTML",
-            cardCss: "CSS",
-            cardBs: "Bootstrap"
-        },
-        siteLink: "rcsgetaway.com",
-        ghLink: "https://github.com/rise-and-shane93/RC-s-Getaway"
-    },
+    // {
+    //     title: "RC's Getaway",
+    //     id: 2,
+    //     image: "/rcsGetaway.png",
+    //     text: {
+    //         es: {
+    //             frontDesc: "¡Su escape en el verano!",
+    //             rearTitle: "Mis Logros",
+    //             rearDesc: "Yo ayudé a una clienta en patrocinar su condominio en la ciudad de Panama City Beach, Florída. También implementé el concepto diseño responsive a móvil."
+    //         },
+    //         en: {
+    //             frontDesc: "Summer Getaway!",
+    //             rearTitle: "Accomplishments",
+    //             rearDesc: "I assisted a client in advertising her condominium in Panama City Beach, FL. I also implemented responsive design concepts to make it mobile friendly."
+    //         }
+    //     },
+    //     skillsUsed: {
+    //         cardHtml: "HTML",
+    //         cardCss: "CSS",
+    //         cardBs: "Bootstrap"
+    //     },
+    //     siteLink: "rcsgetaway.com",
+    //     ghLink: "https://github.com/rise-and-shane93/RC-s-Getaway"
+    // },
     {
         title: "Clean Sweep Products",
-        id: 3,
+        id: 2,
         image: "/cleanSweep.png",
         text: {
             es: {
@@ -88,7 +88,7 @@ const cardContent = [
     },
     {
         title: "Shane Harper",
-        id: 4,
+        id: 3,
         image: "/shaneHarper.png",
         text: {
             es: {
@@ -113,7 +113,7 @@ const cardContent = [
     },
     {
         title: "JS30 Drum Set",
-        id: 5,
+        id: 4,
         image: "/drumSet.png",
         text: {
             es: {
@@ -135,33 +135,33 @@ const cardContent = [
         siteLink: "https://rise-and-shane93.github.io/js30DrumSet/index-START.html",
         ghLink: "https://github.com/rise-and-shane93/js30DrumSet"
     },
-    {
-        title: "Metronome",
-        id: 6,
-        image: "/metronome.png",
-        text: {
-            es: {
-                frontDesc: "Una herramienta por mi curso de violín",
-                rearTitle: "Mis Logros",
-                rearDesc: "A una de mis estudiantes en mi curso de violín no le gusta el ruido de los clics en metrónomo regular, ¡así que yo desarrollé uno con aplausos!"
-            },
-            en: {
-                frontDesc: "A tool for my violin classes",
-                rearTitle: "Accomplishments",
-                rearDesc: "One of my violin students does not like a regular metronome's clicking noise, so I made one that claps!"
-            }
-        },
-        skillsUsed: {
-            cardHtml: "HTML",
-            cardCss: "CSS",
-            cardJs: "JS"
-        },
-        siteLink: "https://www.shanecharper.com/metronome.html",
-        ghLink: "https://github.com/rise-and-shane93/metronome"
-    },
+    // {
+    //     title: "Metronome",
+    //     id: 6,
+    //     image: "/metronome.png",
+    //     text: {
+    //         es: {
+    //             frontDesc: "Una herramienta por mi curso de violín",
+    //             rearTitle: "Mis Logros",
+    //             rearDesc: "A una de mis estudiantes en mi curso de violín no le gusta el ruido de los clics en metrónomo regular, ¡así que yo desarrollé uno con aplausos!"
+    //         },
+    //         en: {
+    //             frontDesc: "A tool for my violin classes",
+    //             rearTitle: "Accomplishments",
+    //             rearDesc: "One of my violin students does not like a regular metronome's clicking noise, so I made one that claps!"
+    //         }
+    //     },
+    //     skillsUsed: {
+    //         cardHtml: "HTML",
+    //         cardCss: "CSS",
+    //         cardJs: "JS"
+    //     },
+    //     siteLink: "https://www.shanecharper.com/metronome.html",
+    //     ghLink: "https://github.com/rise-and-shane93/metronome"
+    // },
     {
         title: "Pig Game",
-        id: 7,
+        id: 5,
         image: "/pigGame.png",
         text: {
             es: {
@@ -185,7 +185,7 @@ const cardContent = [
     },
     {
         title: "Budget App",
-        id: 8,
+        id: 6,
         image: "/budgetApp.png",
         text: {
             es: {
@@ -209,7 +209,7 @@ const cardContent = [
     },
     {
         title: "Adena Harper New Site",
-        id: 9,
+        id: 7,
         image: "/adenaWebsite.png",
         text: {
             es: {
@@ -235,7 +235,7 @@ const cardContent = [
     },
     {
         title: "Charmed",
-        id: 10,
+        id: 8,
         image: "/charmed.png",
         text: {
             es: {
@@ -259,7 +259,7 @@ const cardContent = [
     },
     {
         title: "Jestin Lewis",
-        id: 11,
+        id: 9,
         image: "/jLew.png",
         text: {
             es: {
@@ -286,7 +286,7 @@ const cardContent = [
     },
     {
         title: "Scoreboard",
-        id: 12,
+        id: 10,
         image: "/scoreboard.png",
         text: {
             es: {
@@ -311,7 +311,7 @@ const cardContent = [
     },
     {
         title: "React Router",
-        id: 13,
+        id: 11,
         image: "/router.png",
         text: {
             es: {
@@ -334,6 +334,58 @@ const cardContent = [
         siteLink: "https://rise-and-shane93.github.io/reactRouterTest/",
         ghLink: "https://github.com/rise-and-shane93/reactRouterTest"
     },
+    {
+        title: "Simple Calculator",
+        id: 13,
+        image: "/calculator.png",
+        text: {
+            es: {
+                frontDesc: "Manejo de estado",
+                rearTitle: "Mis Logros",
+                rearDesc: "A pesar de algunas dificuldades, yo logré crear una calculadora usando Redux."
+            },
+            en: {
+                frontDesc: "State management",
+                rearTitle: "Accomplishments",
+                rearDesc: "Although it was tough to begin with, I was able to create a simple calculator using Redux."
+            }
+        },
+        skillsUsed: {
+            cardHtml: "HTML",
+            cardJs: "JS",
+            cardReact: "React",
+            cardRedux: "Redux"
+        },
+        siteLink: "https://rise-and-shane93.github.io/simple-calculator/",
+        ghLink: "https://github.com/rise-and-shane93/simple-calculator/"
+    },
+    {
+        title: "Weather .GIFS",
+        id: 13,
+        image: "/weathergif.png",
+        text: {
+            es: {
+                frontDesc: "¡Mi primer app de fullstack!",
+                rearTitle: "Mis Logros",
+                rearDesc: "Después de aprender los fundamentales de desarrollo fullstack, yo me puse a trabajar para crear mi primer app de fullstack."
+            },
+            en: {
+                frontDesc: "My first fullstack app!",
+                rearTitle: "Accomplishments",
+                rearDesc: "After learning the fundamental of fullstack development, I got to work on creating my first fullstack application."
+            }
+        },
+        skillsUsed: {
+            cardHtml: "HTML",
+            cardJs: "JS",
+            cardReact: "React",
+            cardRedux: "Redux",
+            cardNode: "Node",
+            cardMongo: "Mongo"
+        },
+        siteLink: "http://sharper-weather-gifs.herokuapp.com/",
+        ghLink: "https://github.com/rise-and-shane93/weather-gifs"
+    }
 ];
 
 
